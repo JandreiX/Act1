@@ -159,38 +159,27 @@
       padding: 0; /* Remove default padding for the ul element */
     }
     
-    .nav-container2 ul {
-      list-style: none;
-      display: flex;
-      align-items: center;
-      padding: 0; /* Remove default padding for the ul element */
-    }
-    
-    .nav-container2 li {
-      margin-right: 20px;
-    }
-    
-    .nav-container2 li:last-child {
-      margin-right: 0; /* Remove right margin for the last item */
-    }
-    
-    .nav-container2 a {
-      color: #ffffff;
-      text-decoration: none;
+    .card {
+      background: white;
+      width: 220px;
+      height: 400px;
+      margin: 10px;
     }
 
-    .list-item2 {
-      position: relative;
-      color: #ffffff;
+    .card-img {
+      background-color: aqua;
+      height: 150px;
+      margin-bottom: 15px;
     }
 
-    .list-item2 a{
-      position: static;
-      color: #16163F;
+    .cardimg-1 {
+      /*to be filled */
     }
 
-    .list-item2 a:hover {
-      border-radius: 3px;
-      color: #ffae00;
-      font-weight: 600;
+    .cardimg-2 {
+      /*to be filled */
+    }
+
+    .cardimg-3 {
+      /*to be filled */
     }
