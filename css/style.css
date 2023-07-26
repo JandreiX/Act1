@@ -2,6 +2,14 @@
     * {
       font-family: sans-serif;
       box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    /* Main body styles */
+
+    .body {
+      justify-content: center;
     }
 
     .main {
@@ -14,17 +22,16 @@
       left: 0;
       display: flex;
       flex-direction: column;
-      background-color: #16163F;
+      background-color: #ffffff;
     }
 
     .nav-container {
-      width: 90%;
+      width: 100%;
       background-color: #16163F;
       display: flex;
       align-items: center;
       justify-content: space-between;
       height: 3rem;
-      margin: 6px;
     }
 
     nav ul {
@@ -34,11 +41,12 @@
     }
 
     nav ul li {
+      margin-left: 20px;
       margin-right: 20px;
     }
 
     nav ul li a {
-      margin-left: 10px;
+      margin-left: 0px;
       color: #ffffff;
     }
 
@@ -47,8 +55,14 @@
       color: #ffffff;
     }
 
+    
+
     .fa-brands {
-      margin-left: 10px;
+      margin-right: 20px;
+    }
+
+    .fa-magnifying-glass {
+      margin-right: 20px;
     }
 
     .list-item {
@@ -90,6 +104,7 @@
     }
 
     .logo-and-text-container {
+      width: 100%;
       position: flex;
       display: flex;
       justify-content: space-around;
@@ -97,13 +112,23 @@
     }
 
     .logo {
+        font-size: 1.5em; /* Adjust the value based on your preference */
         text-align: center;
+        max-width: 100%;
+        height: auto;
       }
     
     .logo-box {
         text-align: center;
         background-color: white;
       }
+
+    .logo-box img {
+      width: 100px;
+      height: auto;
+    }
+
+    /* Logo Nav Bar*/
 
     .logo-nav-bar {
         display: flex;
@@ -136,50 +161,157 @@
         text-align: right;
     }
 
+    /* Front page styles */
     .front-page-photo {
       width: 100%; /* Set the width of the div */
       background-color: #ffffff;
       display: contents;
-      align-items: center;
       justify-content: center;
       background-size: cover; /* Image will cover the entire div, maintaining aspect ratio */
       background-position: center center; /* Center the image horizontally and vertically */
-       background-repeat: no-repeat; /* Prevent the image from repeating */
-
+      background-repeat: no-repeat; /* Prevent the image from repeating */
       border-color: #ffffff;
+      margin-left: 20%;
     }
 
-    .nav-container2 {
+    .front-page-photo img {
+      background-size: cover;
       width: 100%;
-      background-color: #ffffff;
-      display: flex;
-      justify-content: center; /* Center the items horizontally */
-      align-items: center; /* Center the items vertically */
-      height: 10rem;
-      padding: 0; /* Remove default padding for the ul element */
     }
+   
+    /* About Container styles*/
+
+    .About-Container {
+      margin-top: 50px;
+      display: flex;
+      background-color: white;
+      width: 100%;
+      justify-content: center;
+      padding-bottom: 10px;
+    }
+    .About-box {
+      display: flex;
+      background-color: #16163F;
+      justify-content: flex-end;
+      width: 80%;
+      border-radius: 10px;
+      margin: auto;
+    }
+    .About-box a {
+      font-weight: bold;
+      padding: 5px;
+      font-size: 30px;
+      color: white;
+      margin-right: 1%;
+    }
+
+    .about-text {
+      justify-content: center;
+      width: 80%;
+      font-size: 1.2rem;
+      line-height: 1.5;
+      margin-left: 10%;
+      margin-top: 1rem;
+      margin-bottom: 3rem;
+      flex-direction: column;
+    }
+
+    .about-text p {
+      width: 50%;
+    }
+
+      .nav-container2 {
+      
+        background-color: #ffffff;
+        display: flex;
+        justify-content: center; /* Center the items horizontally */
+        height:800px;
+        padding-bottom: auto;
+        position: relative;
+      }
     
+    
+    /* Card styles */
     .card {
-      background: white;
-      width: 220px;
-      height: 400px;
+      background: #cdf9f9;
+      width: 420px;
+      height: 680px;
       margin: 10px;
+      border-radius: 20px;
     }
 
     .card-img {
       background-color: aqua;
-      height: 150px;
+      height: 300px;
       margin-bottom: 15px;
+      background-size: cover;
+      border-radius: 20px 20px 0 0;
     }
 
     .cardimg-1 {
-      /*to be filled */
+      background-image: url('https://cdn.vox-cdn.com/thumbor/s1u2o9877kEfbyKOxqFodNRuuWk=/0x0:3840x2160/920x613/filters:focal(1613x773:2227x1387):format(webp)/cdn.vox-cdn.com/uploads/chorus_image/image/65169253/Banbaro2_bmp_jpgcopy.0.jpg');
     }
 
     .cardimg-2 {
-      /*to be filled */
+      background-image: url('https://i0.wp.com/bloody-disgusting.com/wp-content/uploads/2019/12/iceborne.jpg?w=830&ssl=1');
     }
 
     .cardimg-3 {
-      /*to be filled */
+      background-image: url('https://s3.amazonaws.com/prod-media.gameinformer.com/styles/full/s3/2019/09/03/5e6ab214/velkhana06.jpg');
     }
+
+    .cardimg-4 {
+      background-image: url('https://ph-live-01.slatic.net/p/b4bccad5684733fe6489ae15acdb32f2.jpg');
+    }    
+
+    .card:hover {
+      background-color: #ffae00;
+      color: #ffffff;
+      cursor: pointer;
+      transform: scale(1.03);
+      transition: all 1s ease;
+    }
+
+    .card p {
+      font-size: 1.1rem;
+      line-height: 1.5;
+      color: #000000;
+      margin: 0 15px;
+      text-align: justify;
+    }
+
+    .card h2 {
+      font-size: 1.5rem;
+      line-height: 1.5;
+      color: #000000;
+      margin: 0 15px;
+    }
+
+    .card p {
+      overflow: hidden;
+      text-overflow: ellipsis;
+     
+    }
+    
+    .card h2 p {
+      text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.2);
+      margin: 0 10px;
+    }
+
+    .about-tcs {
+      background-color: #f9f9f9;
+      padding: 20px;
+    }
+    .about-container {
+      max-width: auto;
+      margin: 0 auto;
+      padding: 0 20px;
+      justify-content: center;
+      align-items: center;
+      text-align: right;
+    }
+    .about-container h2 {
+      font-size: 28px;
+      margin-bottom: 10px;
+    }
+    
